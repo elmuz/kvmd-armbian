@@ -239,8 +239,8 @@ enable-kvmd-svcs() {
 build-ustreamer() {
   printf "\n\n-> Building ustreamer\n\n"
   # Install packages needed for building ustreamer source
-  echo "apt install -y libasound2-dev libevent-dev libjpeg-dev libbsd-dev libgpiod-dev libspeex-dev libsystemd-dev janus-dev janus"
-  apt install -y libasound2-dev libevent-dev libjpeg-dev libbsd-dev libgpiod-dev libsystemd-dev libspeex-dev janus-dev janus
+  echo "apt install -y libasound2-dev libevent-dev libjpeg-dev libbsd-dev libgpiod-dev libopus-dev libspeexdsp-dev libsystemd-dev janus-dev janus"
+  apt install -y libasound2-dev libevent-dev libjpeg-dev libbsd-dev libgpiod-dev libopus-dev libsystemd-dev libspeexdsp-dev janus-dev janus
 
   # Download ustreamer source and build it
   cd /tmp
